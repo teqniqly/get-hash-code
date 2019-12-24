@@ -1,0 +1,55 @@
+{
+  "name": "@teqniqly/get-hash-code",
+  "version": "1.0.1",
+  "description": "A Typescript implementation of .NET's GetHashCode method.",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --watch-extensions ts --watch -r ts-node/register test/**/*.spec.ts",
+    "coverage": "nyc node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
+    "lint": "tslint **/*.ts --fix --exclude **/node_modules/**/* --format stylish",
+    "build": "tsc --build tsconfig.json"
+  },
+  "homepage": "https://github.com/farooq-teqniqly/get-hash-code#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farooq-teqniqly/get-hash-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/farooq-teqniqly/get-hash-code/issues"
+  },
+  "author": "Teqniqly",
+  "license": "MIT",
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^0.1.3",
+    "@types/chai": "^4.2.5",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.14",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-typescript",
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "test/**/*.ts"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ]
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/index.d.ts"
+}
