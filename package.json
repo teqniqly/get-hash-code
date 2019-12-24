@@ -8,13 +8,13 @@
     "lint": "tslint **/*.ts --fix --exclude **/node_modules/**/* --format stylish",
     "build": "tsc --build tsconfig.json"
   },
-  "homepage": "https://github.com/farooq-teqniqly/get-hash-code#readme",
+  "homepage": "https://github.com/teqniqly/get-hash-code#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farooq-teqniqly/get-hash-code.git"
+    "url": "git+https://github.com/teqniqly/get-hash-code.git"
   },
   "bugs": {
-    "url": "https://github.com/farooq-teqniqly/get-hash-code/issues"
+    "url": "https://github.com/teqniqly/get-hash-code/issues"
   },
   "author": "Teqniqly",
   "license": "MIT",
