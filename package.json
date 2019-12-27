@@ -1,7 +1,12 @@
 {
   "name": "@teqniqly/get-hash-code",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Typescript implementation of .NET's GetHashCode method.",
+  "keywords": [
+    "hashcode",
+    ".net",
+    "hash"
+  ],
   "scripts": {
     "test": "node_modules/.bin/mocha --watch-extensions ts --watch -r ts-node/register test/**/*.spec.ts",
     "coverage": "nyc node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
